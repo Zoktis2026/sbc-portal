@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SBC Portal | Member & Management Portal</title>
+
+  <!-- Open Graph & WhatsApp / Facebook Preview Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SBC Portal" />
+  <meta property="og:title" content="SBC Portal | Member & Management Portal" />
+  <meta property="og:description" content="Official portal for members and administration — access records, contributions, receipts, and announcements." />
+  <meta property="og:image" content="https://i.imgur.com/au5UZSO.png" />
+  <meta property="og:image:secure_url" content="https://i.imgur.com/au5UZSO.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="500" />
+  <meta property="og:image:height" content="500" />
+  <meta property="og:image:alt" content="SBC Portal Official Logo" />
+
+  <!-- Twitter / X Card Tags -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="SBC Portal | Member & Management Portal" />
+  <meta name="twitter:description" content="Official portal for members and administration — access records, contributions, receipts, and announcements." />
+  <meta name="twitter:image" content="https://i.imgur.com/au5UZSO.png" />
+
+  <!-- Favicon / Browser Icon -->
+  <link rel="icon" type="image/png" href="https://i.imgur.com/au5UZSO.png" />
+  <link rel="apple-touch-icon" href="https://i.imgur.com/au5UZSO.png" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at center, #ffffff 0%, #f4f6fa 100%);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #1e293b;
+      overflow: hidden;
+    }
+    .splash-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      animation: fadeIn 0.6s ease-out;
+    }
+    .logo-wrapper {
+      position: relative;
+      width: 110px;
+      height: 110px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .logo-wrapper img {
+      width: 96px;
+      height: 96px;
+      object-fit: contain;
+      border-radius: 50%;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      animation: pulse 1.8s infinite ease-in-out;
+    }
+    .portal-name {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+    .loader-bar {
+      width: 120px;
+      height: 3px;
+      background: rgba(15, 23, 42, 0.08);
+      border-radius: 3px;
+      overflow: hidden;
+      margin-top: 14px;
+      position: relative;
+    }
+    .loader-bar::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 45%;
+      background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+      border-radius: 3px;
+      animation: loading 1.4s infinite ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.04); }
+    }
+    @keyframes loading {
+      0% { left: -45%; }
+      50% { left: 40%; width: 55%; }
+      100% { left: 100%; width: 35%; }
+    }
+  </style>
+
+  <script>
+    // Exact destination URL for your live SBC Apps Script deployment
+    const targetUrl = "https://script.google.com/macros/s/AKfycbzh67e7m94KrA0H0B_moSsjyD1wuF7P2TUKAlbmrhQkYU0pzWrTsalECJNTlfbijgUu/exec";
+
+    // 1.8s delay allows WhatsApp and social bots to scrape the logo preview metadata
+    setTimeout(function() {
+      window.location.replace(targetUrl);
+    }, 1800);
+  </script>
+</head>
+<body>
+  <div class="splash-container">
+    <div class="logo-wrapper">
+      <img src="https://i.imgur.com/au5UZSO.png" alt="SBC Logo" />
+    </div>
+    <div class="portal-name">SBC Portal</div>
+    <div class="loader-bar"></div>
+  </div>
+</body>
+</html>
