@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SBC Portal — Member & Management Portal</title>
   
+  <!-- Preconnect to Google servers to speed up the jump -->
+  <link rel="preconnect" href="https://script.google.com" crossorigin>
+  <link rel="dns-prefetch" href="https://script.google.com">
+
   <!-- WhatsApp & Social Media Preview Tags -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="SBC Portal">
@@ -21,11 +25,7 @@
   <link rel="apple-touch-icon" href="https://i.imgur.com/au5UZSOl.jpg">
 
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       background: #ffffff;
       min-height: 100vh;
@@ -39,7 +39,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      animation: fadeIn 0.4s ease-out;
+      animation: fadeIn 0.3s ease-out;
     }
     .splash-logo {
       width: 96px;
@@ -54,11 +54,11 @@
     }
   </style>
 
-  <!-- Silent background redirect -->
+  <!-- Fast silent redirect -->
   <script>
     setTimeout(function() {
       window.location.replace("https://script.google.com/macros/s/AKfycbzh67e7m94KrA0H0B_moSsjyD1wuF7P2TUKAlbmrhQkYU0pzWrTsalECJNTlfbijgUu/exec");
-    }, 1800);
+    }, 400);
   </script>
 </head>
 <body>
